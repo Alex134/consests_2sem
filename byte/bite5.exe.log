@@ -1,0 +1,212 @@
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\smoro\OneDrive\Рабочий стол\consests_2sem\byte\bite5.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7767F763 в функции ungetwc(). Попытка записать данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 168, Date: 2020-08-02 01:18:16 +0400], Instance: 0x005052FC (32-bit), Flags: Cmdre0, Thread: 0x154C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x7767F763 in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 1 0x77680485 in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 2 0x77675357 in C:\Windows\System32\msvcrt.dll: scanf()
+# 3 0x776752F8 in C:\Windows\System32\msvcrt.dll: scanf()
+
+# 4 0x0042B73A in C:\Users\smoro\OneDrive\Рабочий стол\consests_2sem\byte\bite5.exe: bit5() at C:/Users/smoro/OneDrive/Рабочий стол/consests_2sem/byte/bite5.cpp (9):
+
+      7: {
+      8:     char *str = NULL;
+=>    9:     scanf ("%s", str);
+     10: 
+     11:     printf ("%s", str);
+
+# 5 0x0042B75F in C:\Users\smoro\OneDrive\Рабочий стол\consests_2sem\byte\bite5.exe: main() at C:/Users/smoro/OneDrive/Рабочий стол/consests_2sem/byte/bite5.cpp (16):
+
+     14: int main()
+     15: {
+=>   16:     bit5();
+     17: 
+     18:     return 0;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 168, Date: 2020-08-02 01:18:16 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Рабочий стол\TX\TXLib.h
+Compiled:	Aug 12 2020 00:42:06, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Aug 12 2020 00:42:10
+
+Run file:	C:\Users\smoro\OneDrive\Рабочий стол\consests_2sem\byte\bite5.exe
+Directory:	C:\Users\smoro\OneDrive\Рабочий стол\consests_2sem\byte
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\smoro\OneDrive\Рабочий стол\consests_2sem\byte\bite5.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7767F763 в функции ungetwc(). Попытка записать данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 168, Date: 2020-08-02 01:18:16 +0400], Instance: 0x005052FC (32-bit), Flags: Cmdre0, Thread: 0x154C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x7767F763 in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 1 0x77680485 in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 2 0x77675357 in C:\Windows\System32\msvcrt.dll: scanf()
+# 3 0x776752F8 in C:\Windows\System32\msvcrt.dll: scanf()
+
+# 4 0x0042B73A in C:\Users\smoro\OneDrive\Рабочий стол\consests_2sem\byte\bite5.exe: bit5() at C:/Users/smoro/OneDrive/Рабочий стол/consests_2sem/byte/bite5.cpp (9):
+
+      7: {
+      8:     char *str = NULL;
+=>    9:     scanf ("%s", str);
+     10: 
+     11:     printf ("%s", str);
+
+# 5 0x0042B75F in C:\Users\smoro\OneDrive\Рабочий стол\consests_2sem\byte\bite5.exe: main() at C:/Users/smoro/OneDrive/Рабочий стол/consests_2sem/byte/bite5.cpp (16):
+
+     14: int main()
+     15: {
+=>   16:     bit5();
+     17: 
+     18:     return 0;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 168, Date: 2020-08-02 01:18:16 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Рабочий стол\TX\TXLib.h
+Compiled:	Aug 12 2020 00:42:06, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Aug 12 2020 00:42:10
+
+Run file:	C:\Users\smoro\OneDrive\Рабочий стол\consests_2sem\byte\bite5.exe
+Directory:	C:\Users\smoro\OneDrive\Рабочий стол\consests_2sem\byte
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\smoro\OneDrive\Рабочий стол\consests_2sem\byte\bite5.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7654B907 в функции ungetwc(). Попытка прочесть данные по адресу 0x68666764. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 168, Date: 2020-08-02 01:18:16 +0400], Instance: 0x005052FC (32-bit), Flags: Cmdre0, Thread: 0xE58 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x7654B907 in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 1 0x76544FCB in C:\Windows\System32\msvcrt.dll: printf()
+
+# 2 0x0042B74D in C:\Users\smoro\OneDrive\Рабочий стол\consests_2sem\byte\bite5.exe: bit5() at C:/Users/smoro/OneDrive/Рабочий стол/consests_2sem/byte/bite5.cpp (11):
+
+      9:     scanf ("%s", &str);
+     10: 
+=>   11:     printf ("%s", str);
+     12: 
+     13: 
+
+# 3 0x0042B75F in C:\Users\smoro\OneDrive\Рабочий стол\consests_2sem\byte\bite5.exe: main() at C:/Users/smoro/OneDrive/Рабочий стол/consests_2sem/byte/bite5.cpp (18):
+
+     16: int main()
+     17: {
+=>   18:     bit5();
+     19: 
+     20:     return 0;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 168, Date: 2020-08-02 01:18:16 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Рабочий стол\TX\TXLib.h
+Compiled:	Aug 12 2020 09:17:34, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Aug 12 2020 09:17:38
+
+Run file:	C:\Users\smoro\OneDrive\Рабочий стол\consests_2sem\byte\bite5.exe
+Directory:	C:\Users\smoro\OneDrive\Рабочий стол\consests_2sem\byte
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\smoro\OneDrive\Рабочий стол\consests_2sem\byte\bite5.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7654B907 в функции ungetwc(). Попытка прочесть данные по адресу 0x68666764. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 168, Date: 2020-08-02 01:18:16 +0400], Instance: 0x005052FC (32-bit), Flags: Cmdre0, Thread: 0xE58 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x7654B907 in C:\Windows\System32\msvcrt.dll: ungetwc()
+# 1 0x76544FCB in C:\Windows\System32\msvcrt.dll: printf()
+
+# 2 0x0042B74D in C:\Users\smoro\OneDrive\Рабочий стол\consests_2sem\byte\bite5.exe: bit5() at C:/Users/smoro/OneDrive/Рабочий стол/consests_2sem/byte/bite5.cpp (11):
+
+      9:     scanf ("%s", &str);
+     10: 
+=>   11:     printf ("%s", str);
+     12: 
+     13: 
+
+# 3 0x0042B75F in C:\Users\smoro\OneDrive\Рабочий стол\consests_2sem\byte\bite5.exe: main() at C:/Users/smoro/OneDrive/Рабочий стол/consests_2sem/byte/bite5.cpp (18):
+
+     16: int main()
+     17: {
+=>   18:     bit5();
+     19: 
+     20:     return 0;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 168, Date: 2020-08-02 01:18:16 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Рабочий стол\TX\TXLib.h
+Compiled:	Aug 12 2020 09:17:34, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Aug 12 2020 09:17:38
+
+Run file:	C:\Users\smoro\OneDrive\Рабочий стол\consests_2sem\byte\bite5.exe
+Directory:	C:\Users\smoro\OneDrive\Рабочий стол\consests_2sem\byte
+
+--------------------------------------------------

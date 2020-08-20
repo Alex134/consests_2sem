@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+void ratio();
+
+void ratio()
+{
+    
+}
+
+int main()
+{
+
+return 0;
+}
