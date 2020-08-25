@@ -26,9 +26,62 @@ int list_is_empty(struct Node * list);
 
 void list_clear(struct Node * list);
 
+void list_clear(struct Node * list)
+{
+    for (int flag_empty = 0; flag_em
+
+int list_is_empty(struct Node * list)
+{
+    if ((list -> next == list) && (list -> prev == list)) return 1;
+    else                                                  return 0;
+}
+
+void list_print (struct Node * list)
+{
+    for (Node *count = list -> next; count != list; count = count -> next)
+            printf("%d ", count -> data);
+
+    printf("\n");
+}
+
+Data list_pop_back(struct Node * list)
+{
+    return list_delete (list -> prev);
+}
+
+Data list_pop_front(struct Node * list)
+{
+    return list_delete (list -> next);
+}
+
+Data list_delete(struct Node * t)
+{
+    Data result = t -> data;
+
+    list_remove (t);
+
+    return result;
+}
+
+struct Node * list_push_back(struct Node * list, Data d)
+{
+    Node *new_element = (Node *) calloc (1, sizeof(Node));
+    new_element -> data = d;
+
+    list_insert_before (list, new_element);
+
+    return new_element;
+}
+
 struct Node * list_push_front(struct Node * list, Data d)
 {
-    
+    Node *new_element = (Node *) calloc (1, sizeof(Node));
+    new_element -> data = d;
+
+    list_insert (list, new_element);
+
+    return new_element;
+}
 
 void list_remove(struct Node * t)
 {
