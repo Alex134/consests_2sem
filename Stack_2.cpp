@@ -148,5 +148,6 @@ while (!stack_is_empty(sp)) {
 stack_destroy(sp);
 
 return 0;
+
 }
 
