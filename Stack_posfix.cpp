@@ -16,9 +16,9 @@ struct ar_struct {
     int number;
     char simvol;
 } arr_num [] = {
-    { 0, '+' },
-    { 1, '-' },
-    { 2, '*' },
+    { 0, '!' },
+    { 1, '|' },
+    { 2, '&' },
 };
 
 struct Stack* stack_create (int size);
@@ -30,17 +30,17 @@ int            stack_size (struct Stack* s);
 int            stack_is_empty (struct Stack* s);
 void           stack_clear (struct Stack* s);
 void           stack_destroy (struct Stack* s);
-int            multi (int x, int y);
-int            plus (int x, int y);
-int            minus (int x, int y);
+int            NO (int x, int y);
+int            OR (int x, int y);
+int            AND (int x, int y);
 
 int main()
 {
     char simb;
     int (* program_func[5])(int x, int y);
-        program_func[0] = &plus;
-        program_func[1] = &minus;
-        program_func[2] = &multi;
+        program_func[0] = &NO;
+        program_func[1] = &OR;
+        program_func[2] = &AND;
     struct Stack* s = stack_create (6);
 
     scanf ("%c", &simb);
@@ -168,17 +168,17 @@ struct Stack* stack_create (int size)
     return stor;
 }
 
-int plus (int x, int y)
+int NO (int x, int y)
 {
-    return x + y;
+    return !x;
 }
 
-int minus (int x, int y)
+int AND (int x, int y)
 {
-    return y - x;
+    return x && y;
 }
 
-int multi (int x, int y)
+int OR (int x, int y)
 {
-    return x*y;
+    return x || y;
 }

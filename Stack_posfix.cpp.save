@@ -168,17 +168,17 @@ struct Stack* stack_create (int size)
     return stor;
 }
 
-int plus (int x, int y)
+int NO (int x, int y)
 {
-    return x + y;
+    return ;
 }
 
-int minus (int x, int y)
+int AND (int x, int y)
 {
-    return y - x;
+    return x || y;
 }
 
-int multi (int x, int y)
+int OR (int x, int y)
 {
-    return x*y;
+    return OR;
 }
