@@ -30,11 +30,7 @@ struct Node* tree_add (struct Node* tree, Data x)
         } else {
             if (x - tree->val < 0) {
                 tree-> left = tree_add (tree->left, x);
-            } else {
-                if (x != tree->val) {
-                    printf ("EROR\n");
-                }
-            }
+            } 
         }
     }
 

@@ -106,5 +106,5 @@ int main()
         list_print(list);
         list = list_pop(list, &x);
         printf("x = %d\n", x);
-        //list = list_clear(list);
+        list = list_clear(list);
 }

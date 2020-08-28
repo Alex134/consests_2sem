@@ -48,8 +48,10 @@ void stack_clear (struct Stack* s)
 
 int  stack_is_empty (struct Stack* s)
 {
-    if (s -> n == 0) return 1;
-    else             return 0;
+    if (s->n == 0) 
+        return 1;
+    else             
+        return 0;
 }
 
 void stack_print (struct Stack* s)
@@ -106,7 +108,7 @@ void stack_push (struct Stack* s, Data x)
 struct Stack* stack_create (int size)
 {
     //printf("start\n");
-    struct Stack* stor = (Stack*) calloc (1, sizeof (struct Stack));
+    struct Stack* stor = calloc (1, sizeof (struct Stack));
     stor -> a = (Data*) calloc (size, sizeof (Data));
 
     stor -> n    = 0;
@@ -121,39 +123,38 @@ struct Stack* stack_create (int size)
 
 int main()
 {
-    struct Stack* s = stack_create(5);
+    struct Stack* s = stack_create (5);
     Data sim, temp;
     int res_scanf = 1, flag = 1;
 
-    while(res_scanf == 1)
-	{
-		if(scanf("%c", &sim) != 1)
-		{
-			res_scanf = 0;
-			break;
-		}
-		for (int first_count = 0; first_count < 4; first_count++)
-        {
-            if (sim == st_skob[first_count].first)
-                stack_push(s, sim);
-                
+    while (res_scanf == 1) {
+        if (scanf ("%c", &sim) != 1) {
+            res_scanf = 0;
+            break;
         }
 
-        for (int count = 0; count < 4; count++)
+        for (int first_count = 0; first_count < 4; first_count++) {
+            if (sim == st_skob[first_count].first)
+                stack_push (s, sim);
+
+        }
+
+        for (int count = 0; count < 4; count++) {
+            if ( (sim == st_skob[count].last) && (stack_is_empty (s) == 0)) 
             {
-            if ((sim == st_skob[count].last) && (stack_empty == 0)
-                {
-                 temp = stack_pop(s);
+                temp = stack_pop (s);
 
-                 if (data != st_skob[count]) flag = 0;
-                }
+                if (temp != st_skob[count].first) flag = 0;
             }
-
-        
-
-
-
+        }
     }
-      
+
+    if ( (flag == 1) && (stack_is_empty (s) == 1)) 
+        printf ("YES\n");
+    else                                  
+        printf ("NO \n");
+
+    stack_destroy (s);
+
     return 0;
 }

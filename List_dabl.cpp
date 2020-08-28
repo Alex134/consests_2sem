@@ -143,6 +143,7 @@ void list_insert_before (struct Node * list, struct Node * t)
 
 int main()
 {
+    int i = 0;
     struct Node x[10];
 	struct Node * a = malloc(sizeof(struct Node));
 	struct Node * b = malloc(sizeof(struct Node));
